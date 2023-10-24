@@ -16,7 +16,7 @@ function eventLoopPractice() {
 
   setTimeout(() => {
     Promise.resolve().then(() => console.log(1))
-    square.classList.add('red_square')
+    requestAnimationFrame(() => square.classList.add('red_square'))
   }, 1000)
 
   setTimeout(() => {
@@ -26,7 +26,9 @@ function eventLoopPractice() {
 
   setTimeout(() => {
     Promise.resolve().then(() => console.log(4))
-    square.insertAdjacentHTML('afterbegin', '<h1>Привет</h1>')
+    requestAnimationFrame(() =>
+      square.insertAdjacentHTML('afterbegin', '<h1>Привет</h1>')
+    )
   }, 3000)
 }
 
