@@ -1,0 +1,13 @@
+.square {
+  width: 250px;
+  height: 250px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: azure;
+}
+
+.red_square {
+  background-color: red;
+}
